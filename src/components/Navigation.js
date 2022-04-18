@@ -28,6 +28,7 @@ const NavigationStyle = styled.nav`
     text-align: center;
     .active-class {
       background-color: var(--primary-color);
+      color: white;
       &::before {
         opacity: 0;
       }
@@ -50,7 +51,7 @@ const NavigationStyle = styled.nav`
           width: 0;
           height: 20%;
           background-color: var(--primary-color);
-          transition: 0.4s width, 0.4s height 0.4s;
+          transition: 0.4s width, 0.3s height 0.4s;
           z-index: 3;
           opacity: 0.21;
         }
