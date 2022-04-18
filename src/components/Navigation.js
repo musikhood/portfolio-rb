@@ -38,8 +38,12 @@ const NavigationStyle = styled.nav`
       a {
         display: block;
         position: relative;
-        padding: 0.2rem 0;
+        padding: 0.4rem 0;
+        margin: 1rem 0;
         z-index: 4;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
         &:hover {
           cursor: pointer;
         }
@@ -83,22 +87,22 @@ export default function Navigation() {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <NavLink to="/home" activeClassName="active-class">
+          <NavLink to="/" activeClassName="active-class" exact>
             Home
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" activeClassName="active-class">
+          <NavLink to="/about" activeClassName="active-class" exact>
             About
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/resume" activeClassName="active-class">
+          <NavLink to="/resume" activeClassName="active-class" exact>
             Resume
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" activeClassName="active-class">
+          <NavLink to="/contact" activeClassName="active-class" exact>
             Contact
           </NavLink>
         </li>
