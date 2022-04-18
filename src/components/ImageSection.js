@@ -42,10 +42,6 @@ const ImageSectionStyled = styled.div`
   }
   .left-content {
     width: 100%;
-    img {
-      width: 90%;
-      object-fit: cover;
-    }
   }
 `;
 
@@ -53,7 +49,6 @@ export default function ImageSection() {
   return (
     <ImageSectionStyled>
       <div className="left-content">
-        {/* <img src={resume} alt="resume image" /> */}
         <Title title="My Skills" span="My Skills" />
         <MySkills />
       </div>
