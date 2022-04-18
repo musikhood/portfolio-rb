@@ -97,8 +97,8 @@ export default function Navigation() {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/resume" activeClassName="active-class" exact>
-            Resume
+          <NavLink to="/projects" activeClassName="active-class" exact>
+            Projects
           </NavLink>
         </li>
         <li className="nav-item">

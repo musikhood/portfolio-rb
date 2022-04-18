@@ -1,5 +1,19 @@
 import React from "react";
+import styled from "styled-components";
+import { MainLayout } from "../styles/Layouts";
+import Title from "../components/Title";
+import ImageSection from "../components/ImageSection";
+import SkillsSection from "../components/SkillsSection";
+
+const AboutStyled = styled.section``;
 
 export default function AboutPage() {
-  return <div>About</div>;
+  return (
+    <MainLayout>
+      <AboutStyled>
+        <Title title="About Me" span="About Me" />
+        <ImageSection />
+      </AboutStyled>
+    </MainLayout>
+  );
 }

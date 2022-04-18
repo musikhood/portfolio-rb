@@ -3,7 +3,7 @@ import styled from "styled-components";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import ResumePage from "./pages/ResumePage";
+import ProjectsPage from "./pages/ProjectsPage";
 import { Route, Switch } from "react-router-dom";
 
 const MainContentStyled = styled.main`
@@ -24,8 +24,8 @@ export default function App() {
           <Route path="/about" exact>
             <AboutPage />
           </Route>
-          <Route path="/resume" exact>
-            <ResumePage />
+          <Route path="/projects" exact>
+            <ProjectsPage />
           </Route>
           <Route path="/contact" exact>
             <ContactPage />
