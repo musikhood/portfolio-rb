@@ -7,6 +7,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocatinIcon from "@mui/icons-material/LocationOn";
 import ContactItem from "../components/ContactItem";
+import emailjs from "emailjs-com";
 
 const ContactPageStyled = styled.section`
   .contact-section {
@@ -62,6 +63,24 @@ const ContactPageStyled = styled.section`
 `;
 
 export default function ContactPage() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_ggdktbf",
+        "template_gdlq9el",
+        e.target,
+        "pHibU9NTqEfCCI2kD"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("text-area").value = "";
+  };
   return (
     <MainLayout>
       <Title title="Contact" span="Contact" />
@@ -71,25 +90,25 @@ export default function ContactPage() {
             <div className="contact-title">
               <h4>Get In Touch</h4>
             </div>
-            <form className="form">
+            <form className="form" onSubmit={sendEmail}>
               <div className="form-field">
                 <label htmlFor="name">Enter your name*</label>
-                <input type="text" id="name" />
+                <input type="text" name="name" id="name" />
               </div>
 
               <div className="form-field">
                 <label htmlFor="email">Enter your email*</label>
-                <input type="email" id="email" />
+                <input type="email" name="user_email" id="email" />
               </div>
 
               <div className="form-field">
                 <label htmlFor="subject">Enter your subject</label>
-                <input type="text" id="subject" />
+                <input type="text" name="user_subject" id="subject" />
               </div>
               <div className="form-field">
-                <label htmlFor="text-area">Enter your message*</label>
+                <label htmlFor="message">Enter your message*</label>
                 <textarea
-                  name="text-area"
+                  name="message"
                   id="text-area"
                   cols="30"
                   rows="4"

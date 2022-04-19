@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const PrimaryButtonStyled = styled.a`
+const PrimaryButtonStyled = styled.button`
   background-color: var(--background-light-color-2);
   padding: 0.8rem 2.5rem;
   color: var(--white-color);
@@ -11,6 +11,8 @@ const PrimaryButtonStyled = styled.a`
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
+  outline: none;
+  border: none;
 
   &::after {
     content: "";
