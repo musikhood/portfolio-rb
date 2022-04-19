@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const PrimaryButtonStyled = styled.a`
   background-color: var(--background-light-color-2);

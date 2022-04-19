@@ -68,15 +68,13 @@ export default function ImageSection() {
             <p>Nationality </p>
             <p>Languages </p>
             <p>Location </p>
-            <p>Service </p>
           </div>
           <div className="info">
-            <p>: Rafał Białowski</p>
-            <p>: 19</p>
-            <p>: Polish</p>
-            <p>: Polish / English </p>
-            <p>: Lublin, Poland </p>
-            <p>: Frontend Developer </p>
+            <p>Rafał Białowski</p>
+            <p>19</p>
+            <p>Polish</p>
+            <p>Polish / English </p>
+            <p>Lublin, Poland </p>
           </div>
         </div>
         <PrimaryButtonDownload

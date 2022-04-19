@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { MainLayout } from "../styles/Layouts";
 import Title from "../components/Title";
 import ImageSection from "../components/ImageSection";
-import SkillsSection from "../components/SkillsSection";
 
 const AboutStyled = styled.section``;
 

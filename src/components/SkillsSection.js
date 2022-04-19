@@ -17,11 +17,17 @@ const MySkillsStyled = styled.div`
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-color: var(--background-light-color-2);
     color: var(--white-color);
     font-weight: 600;
     letter-spacing: 2px;
     border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      /* background-color: var(--background-light-color-2); */
+      background-color: var(--primary-color);
+    }
   }
 `;
 
