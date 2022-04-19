@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     html::-webkit-scrollbar{
-        width: 10px;
+        width: .5vw;
     }
 
     html::-webkit-scrollbar-thumb{

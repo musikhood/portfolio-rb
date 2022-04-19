@@ -17,7 +17,7 @@ export default function App() {
     <div className="App">
       <Sidebar />
       <MainContentStyled>
-        <Switch>
+        <Switch basename={process.env.PUBLIC_URL}>
           <Route path="/" exact>
             <HomePage />
           </Route>
