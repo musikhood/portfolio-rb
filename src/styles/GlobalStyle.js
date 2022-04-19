@@ -28,6 +28,21 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Nunito', sans-serif;
         font-size: 1.2rem;
     }
+    html{
+        scrollbar-width: thin;
+        scrollbar-color: var( --font-dark-color) var(--background-dark-color);
+    }
+
+    html::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    html::-webkit-scrollbar-thumb{
+        background-color: var( --font-dark-color);
+    }
+    html::-webkit-scrollbar-track{
+        background-color: var(--background-dark-color);
+    }
 
     body{
         background-color: var(--background-dark-color);

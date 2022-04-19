@@ -58,7 +58,11 @@ export default function HomePage() {
           sapiente! Lorem ipsum dolor sit amet.
         </p>
         <div className="icon">
-          <a href="https://github.com/musikhood" className="i-github">
+          <a
+            href="https://github.com/musikhood"
+            className="i-github"
+            target="_blank"
+          >
             <GitHubIcon />
           </a>
         </div>
