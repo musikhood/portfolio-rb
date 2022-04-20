@@ -105,7 +105,7 @@ export default function Navigation({ setNavToggle }) {
               setNavToggle(false);
             }}
           >
-            About
+            About Me
           </NavLink>
         </li>
         <li className="nav-item">

@@ -1,6 +1,6 @@
-import Image from "../img/graybg.png";
 import TodoAppImage from "../img/TodoApp.png";
 import NatoursImage from "../img/Natours.png";
+import CryptoImage from "../img/Crypto.png";
 const projects = [
   {
     id: 1,
@@ -24,13 +24,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "Title3",
+    title: "Cryptocurrency tracker",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident obcaecati placeat eum consectetur, quasdasdasfasfafasf sa fasf  asd fads fasdf as df asd fdas f  fa  afasfasf  sdf dafs ds fda fs dasfctetur adipisicing elit. Nisi provident obcaecati quuntur.",
-    image: Image,
+      "Technologies used: Html, Sass, React, API. This is a cryptocurrency tracker with coingecko API using axios",
+    image: CryptoImage,
     reverse: false,
-    ghlink: "https://www.youtube.com/",
-    demolink: "https://www.google.com/",
+    ghlink: "https://github.com/musikhood/Cryptocurrency-tracker",
+    demolink: "https://musikhood.github.io/Cryptocurrency-tracker/",
   },
 ];
 

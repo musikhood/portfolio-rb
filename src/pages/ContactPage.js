@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { MainLayout, InnerLayout } from "../styles/Layouts";
 import Title from "../components/Title";
 import PrimaryButton from "../components/PrimaryButton";
-import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocatinIcon from "@mui/icons-material/LocationOn";
 import ContactItem from "../components/ContactItem";
@@ -27,6 +26,7 @@ const ContactPageStyled = styled.section`
     .right-content {
       display: flex;
       flex-direction: column;
+      justify-content: center;
     }
     .contact-title {
       h4 {
@@ -86,7 +86,7 @@ export default function ContactPage() {
         console.log(res);
         toast.success("Success", {
           position: "top-right",
-          autoClose: 2000,
+          autoClose: 4000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: false,
@@ -98,7 +98,7 @@ export default function ContactPage() {
         console.log(err);
         toast.error("Error", {
           position: "top-right",
-          autoClose: 2000,
+          autoClose: 4000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: false,

@@ -7,7 +7,9 @@ const ContactItemStyled = styled.div`
   display: flex;
   align-items: center;
 
-  margin-top: 2rem;
+  :not(:first-of-type) {
+    margin-top: 2rem;
+  }
   @media screen and (max-width: 700px) {
     flex-direction: column;
     text-align: center;
