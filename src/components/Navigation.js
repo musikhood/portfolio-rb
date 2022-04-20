@@ -39,7 +39,6 @@ const NavigationStyle = styled.nav`
         display: block;
         position: relative;
         padding: 0.4rem 0;
-        margin: 1rem 0;
         z-index: 4;
         font-weight: 600;
         letter-spacing: 1px;
@@ -53,9 +52,9 @@ const NavigationStyle = styled.nav`
           bottom: 0;
           left: 0;
           width: 0;
-          height: 20%;
+          height: 100%;
           background-color: var(--primary-color);
-          transition: 0.4s width, 0.3s height 0.4s;
+          transition: width 0.4s ease-in-out;
           z-index: 3;
           opacity: 0.21;
         }
@@ -63,7 +62,6 @@ const NavigationStyle = styled.nav`
 
       a:hover::before {
         width: 100%;
-        height: 100%;
       }
     }
   }
@@ -79,7 +77,7 @@ const NavigationStyle = styled.nav`
   }
 `;
 
-export default function Navigation() {
+export default function Navigation({ setNavToggle }) {
   return (
     <NavigationStyle>
       <div className="avatar">
@@ -87,22 +85,50 @@ export default function Navigation() {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <NavLink to="/" activeClassName="active-class" exact>
+          <NavLink
+            to="/"
+            activeClassName="active-class"
+            exact
+            onClick={() => {
+              setNavToggle(false);
+            }}
+          >
             Home
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" activeClassName="active-class" exact>
+          <NavLink
+            to="/about"
+            activeClassName="active-class"
+            exact
+            onClick={() => {
+              setNavToggle(false);
+            }}
+          >
             About
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/projects" activeClassName="active-class" exact>
+          <NavLink
+            to="/projects"
+            activeClassName="active-class"
+            exact
+            onClick={() => {
+              setNavToggle(false);
+            }}
+          >
             Projects
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" activeClassName="active-class" exact>
+          <NavLink
+            to="/contact"
+            activeClassName="active-class"
+            exact
+            onClick={() => {
+              setNavToggle(false);
+            }}
+          >
             Contact
           </NavLink>
         </li>

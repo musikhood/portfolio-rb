@@ -57,6 +57,13 @@ const ProjectItemStyled = styled.div`
       }
     }
   }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    max-width: 500px;
+    .right-content {
+      order: -1;
+    }
+  }
 `;
 
 export default function ProjectItem({
@@ -70,16 +77,16 @@ export default function ProjectItem({
   return (
     <ProjectItemStyled>
       <div className="left-content">
-        <img src={image} alt="Project image" />
+        <img src={image} alt="Project pic" />
       </div>
       <div className="right-content" style={reverse ? { order: -1 } : null}>
         <h2>{title}</h2>
         <p>{description}</p>
         <div className="buttons">
-          <a href={demolink} className="demo" target="_blank">
+          <a href={demolink} className="demo" target="_blank" rel="noreferrer">
             View Demo
           </a>
-          <a href={ghlink} className="gh" target="_blank">
+          <a href={ghlink} className="gh" target="_blank" rel="noreferrer">
             <GitHubIcon />
           </a>
         </div>

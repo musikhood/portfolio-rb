@@ -7,12 +7,21 @@ const SidebarStyled = styled.div`
   height: 100vh;
   position: fixed;
   background-color: var(--sidebar-dark-color);
+  transition: all 0.4s ease-in-out;
+  z-index: 2000;
+
+  @media screen and (max-width: 1200px) {
+    transform: translateX(-100%);
+  }
+  @media screen and (max-width: 500px) {
+    width: 11rem;
+  }
 `;
 
-export default function Sidebar() {
+export default function Sidebar({ navToggle, setNavToggle }) {
   return (
-    <SidebarStyled>
-      <Navigation />
+    <SidebarStyled className={`${navToggle ? "nav-toggle" : ""}`}>
+      <Navigation setNavToggle={setNavToggle} />
     </SidebarStyled>
   );
 }

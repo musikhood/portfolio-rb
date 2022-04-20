@@ -64,6 +64,27 @@ const GlobalStyle = createGlobalStyle`
         font-size: inherit;
         color: var(--primary-color);
     }
+    .ham-burger-menu{
+        display: none;
+    }
+    .nav-toggle{
+        transform: translateX(0);
+    }
+    @media screen and (max-width: 1200px) {
+    .ham-burger-menu{
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 5000;
+        cursor: pointer;
+        svg{
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
 `;
 
 export default GlobalStyle;

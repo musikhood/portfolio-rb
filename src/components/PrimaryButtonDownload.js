@@ -11,6 +11,9 @@ const PrimaryButtonStyled = styled.a`
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
+  @media screen and (max-width: 800px) {
+    font-size: 0.8rem;
+  }
 
   &::after {
     content: "";

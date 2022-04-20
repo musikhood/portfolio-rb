@@ -1,24 +1,26 @@
 import Image from "../img/graybg.png";
+import TodoAppImage from "../img/TodoApp.png";
+import NatoursImage from "../img/Natours.png";
 const projects = [
   {
     id: 1,
-    title: "Title1",
+    title: "Todo App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident obcaecati placeat eum consectetur, quasdasdasfasfafasf sa fasf  asd fads fasdf as df asd fdas f  fa  afasfasf  sdf dafs ds fda fs dasfctetur adipisicing elit. Nisi provident obcaecati quuntur.",
-    image: Image,
+      "Technologies used: Html, Sass, React, Bem. This is a custom Todo Application with some fancy looking style and draggable objects",
+    image: TodoAppImage,
     reverse: false,
-    ghlink: "https://www.youtube.com/",
-    demolink: "https://www.google.com/",
+    ghlink: "https://github.com/musikhood/todo-app",
+    demolink: "https://musikhood.github.io/todo-app",
   },
   {
     id: 2,
-    title: "Title2",
+    title: "Natours",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident obcaecati placeat eum consectetur, quidem aut a odio quisquam consequuntur.",
-    image: Image,
+      "Technologies used: Html, Sass, Bem. This is a fully responsive landing page for made up company called Natours",
+    image: NatoursImage,
     reverse: true,
-    ghlink: "https://www.youtube.com/",
-    demolink: "https://www.google.com/",
+    ghlink: "https://github.com/musikhood/Natours",
+    demolink: "https://musikhood.github.io/Natours/",
   },
   {
     id: 3,

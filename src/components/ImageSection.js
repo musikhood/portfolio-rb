@@ -14,19 +14,33 @@ const ImageSectionStyled = styled.div`
     h4 {
       font-size: 2rem;
       color: var(--white-color);
+      @media screen and (max-width: 800px) {
+        font-size: 1.5rem;
+      }
     }
     .paragraph {
       padding: 1rem 0;
       width: 80%;
+      @media screen and (max-width: 800px) {
+        font-size: 1rem;
+      }
     }
     .about-info {
       display: flex;
       padding-bottom: 1.4rem;
+
       .info-title {
         margin-right: 3rem;
         color: var(--white-color);
+        @media screen and (max-width: 800px) {
+          margin-right: 1.5rem;
+        }
+
         p {
           font-weight: 600;
+          @media screen and (max-width: 800px) {
+            font-size: 1rem;
+          }
         }
       }
       .info p {
@@ -36,12 +50,22 @@ const ImageSectionStyled = styled.div`
         padding: 1rem 0;
         p {
           padding: 0.3rem 0;
+          @media screen and (max-width: 800px) {
+            font-size: 1rem;
+          }
         }
       }
     }
   }
   .left-content {
     width: 100%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    max-width: 600px;
+    margin: 3rem auto;
+    gap: 5rem;
   }
 `;
 
@@ -57,9 +81,9 @@ export default function ImageSection() {
           I am <span>Rafał</span>
         </h4>
         <p className="paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta
-          aliquid quis, quas asperiores tenetur veniam. Saepe consequuntur
-          tempora dolorem eius nulla repellat. Praesentium commodi
+          I'm self taught front end developer who's in love with programming. I
+          finished school with the title of IT technician. I want to improve my
+          skills and work with real projects.
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -74,7 +98,7 @@ export default function ImageSection() {
             <p>19</p>
             <p>Polish</p>
             <p>Polish / English </p>
-            <p>Lublin, Poland </p>
+            <p>Poland, Lublin</p>
           </div>
         </div>
         <PrimaryButtonDownload

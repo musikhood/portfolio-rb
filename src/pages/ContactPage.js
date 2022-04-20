@@ -8,12 +8,22 @@ import EmailIcon from "@mui/icons-material/Email";
 import LocatinIcon from "@mui/icons-material/LocationOn";
 import ContactItem from "../components/ContactItem";
 import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 
 const ContactPageStyled = styled.section`
   .contact-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-column-gap: 2rem; */
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    @media screen and (max-width: 1500px) {
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
     .right-content {
       display: flex;
       flex-direction: column;
@@ -74,8 +84,28 @@ export default function ContactPage() {
       )
       .then((res) => {
         console.log(res);
+        toast.success("Success", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+        });
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        toast.error("Error", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+        });
+      });
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
     document.getElementById("subject").value = "";
@@ -93,12 +123,12 @@ export default function ContactPage() {
             <form className="form" onSubmit={sendEmail}>
               <div className="form-field">
                 <label htmlFor="name">Enter your name*</label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" required />
               </div>
 
               <div className="form-field">
                 <label htmlFor="email">Enter your email*</label>
-                <input type="email" name="user_email" id="email" />
+                <input type="email" name="user_email" id="email" required />
               </div>
 
               <div className="form-field">
@@ -112,6 +142,7 @@ export default function ContactPage() {
                   id="text-area"
                   cols="30"
                   rows="4"
+                  required
                 ></textarea>
               </div>
               <div className="form-field">
@@ -121,16 +152,15 @@ export default function ContactPage() {
           </div>
           <div className="right-content">
             <ContactItem
-              Icon={PhoneIcon}
-              title="Phone"
-              contact1="+48123456789"
-            />
-            <ContactItem
               Icon={EmailIcon}
               title="Email"
-              contact1="example@mail.com"
+              contact1="rafal.bialowski2@gmail.com"
             />
-            <ContactItem Icon={LocatinIcon} title="Location" contact1="lbn" />
+            <ContactItem
+              Icon={LocatinIcon}
+              title="Location"
+              contact1="Poland, Lublin"
+            />
           </div>
         </InnerLayout>
       </ContactPageStyled>

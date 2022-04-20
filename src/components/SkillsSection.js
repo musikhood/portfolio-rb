@@ -10,6 +10,9 @@ const MySkillsStyled = styled.div`
     flex-wrap: wrap;
     text-transform: uppercase;
     gap: 1rem;
+    @media screen and (max-width: 800px) {
+      max-width: 400px;
+    }
   }
   .box {
     padding: 1rem 2rem;
@@ -27,6 +30,10 @@ const MySkillsStyled = styled.div`
     &:hover {
       /* background-color: var(--background-light-color-2); */
       background-color: var(--primary-color);
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
     }
   }
 `;

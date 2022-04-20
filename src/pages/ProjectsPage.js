@@ -14,7 +14,7 @@ const ProjectsPageStyled = styled.div`
 export default function ProjectsPage() {
   return (
     <MainLayout>
-      <Title title="My Projects" span="My Projects" />
+      <Title title="Projects" span="Projects" />
       <ProjectsPageStyled>
         {projects.map(
           ({ id, title, description, image, reverse, ghlink, demolink }) => (

@@ -8,6 +8,13 @@ const ContactItemStyled = styled.div`
   align-items: center;
 
   margin-top: 2rem;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem auto;
+    gap: 1.5rem;
+    width: 270px;
+  }
 
   .left-content {
     padding: 1.5rem;
@@ -17,6 +24,9 @@ const ContactItemStyled = styled.div`
     align-items: center;
     justify-content: center;
     margin-right: 1.5rem;
+    @media screen and (max-width: 700px) {
+      margin: 0;
+    }
 
     svg {
       font-size: 2.3rem;
@@ -27,8 +37,14 @@ const ContactItemStyled = styled.div`
       color: var(--white-color);
       font-size: 1.2rem;
       padding-bottom: 0.6rem;
+      @media screen and (max-width: 700px) {
+        font-size: 1rem;
+      }
     }
     p {
+      @media screen and (max-width: 700px) {
+        font-size: 1rem;
+      }
     }
   }
 `;

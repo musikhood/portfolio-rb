@@ -52,16 +52,13 @@ export default function HomePage() {
         <h1>
           Hi I'm <span>Rafał</span>
         </h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim labore
-          odit dicta voluptatem placeat nulla quaerat adipisci, minima id
-          sapiente! Lorem ipsum dolor sit amet.
-        </p>
+        <p>I'm a front end developer located in Poland.</p>
         <div className="icon">
           <a
             href="https://github.com/musikhood"
             className="i-github"
             target="_blank"
+            rel="noreferrer"
           >
             <GitHubIcon />
           </a>
