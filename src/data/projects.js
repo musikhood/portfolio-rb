@@ -1,6 +1,7 @@
 import TodoAppImage from "../img/TodoApp.png";
 import NatoursImage from "../img/Natours.png";
 import CryptoImage from "../img/Crypto.png";
+import TeslaImage from "../img/Tesla-clone.png";
 const projects = [
   {
     id: 1,
@@ -31,6 +32,16 @@ const projects = [
     reverse: false,
     ghlink: "https://github.com/musikhood/Cryptocurrency-tracker",
     demolink: "https://musikhood.github.io/Cryptocurrency-tracker/",
+  },
+  {
+    id: 4,
+    title: "Tesla Clone",
+    description:
+      "Technologies used: Html, React, Style components, Redux. This is a Tesla website clone with some react reveal animations",
+    image: TeslaImage,
+    reverse: true,
+    ghlink: "https://github.com/musikhood/Tesla-clone",
+    demolink: "https://musikhood.github.io/Tesla-clone/",
   },
 ];
 
