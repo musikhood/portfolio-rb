@@ -47,6 +47,7 @@ export default function MySkills() {
         <div className="box">javascript</div>
         <div className="box">react</div>
         <div className="box">redux</div>
+        <div className="box">Webpack</div>
         <div className="box">sass</div>
         <div className="box">git</div>
         <div className="box">bem</div>

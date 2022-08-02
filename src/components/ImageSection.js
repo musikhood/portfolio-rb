@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../img/avatar.png";
-import PrimaryButtonDownload from "./PrimaryButtonDownload";
 import MySkills from "./SkillsSection";
 import Title from "./Title";
 const ImageSectionStyled = styled.div`
@@ -95,17 +93,12 @@ export default function ImageSection() {
           </div>
           <div className="info">
             <p>Rafał Białowski</p>
-            <p>19</p>
+            <p>20</p>
             <p>Polish</p>
             <p>Polish / English </p>
             <p>Poland, Lublin</p>
           </div>
         </div>
-        <PrimaryButtonDownload
-          title="Curriculum Vitae"
-          link={resume}
-          name="cv.png"
-        />
       </div>
     </ImageSectionStyled>
   );
