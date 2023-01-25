@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --PrimaryFont: "Poppins";
+  --SecondaryFont: "Permament Marker";
+
+  --RedFont: #e73838;
+  --BlackBG: #161414;
+  --WhiteFont: #ffffff;
+
+  --FontSize: 1.6rem;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--PrimaryFont);
+  font-size: var(--FontSize);
+  color: var(--WhiteFont);
+  background-color: var(--BlackBG);
+}
