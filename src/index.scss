@@ -10,7 +10,7 @@
 
 html {
   --PrimaryFont: "Poppins";
-  --SecondaryFont: "Permament Marker";
+  --SecondaryFont: "Permanent Marker";
 
   --RedFont: #e73838;
   --BlackBG: #161414;
@@ -26,4 +26,6 @@ body {
   font-size: var(--FontSize);
   color: var(--WhiteFont);
   background-color: var(--BlackBG);
+  padding: 10rem;
+  overflow-x: hidden;
 }

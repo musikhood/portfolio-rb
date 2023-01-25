@@ -1,8 +1,20 @@
 import React from "react";
 import "./Header.scss";
+import Avatar from "../../img/Avatar.svg";
+import CatAvatar from "../../img/CatAvatar.svg";
 
 function Header() {
-  return <div>Header</div>;
+  return (
+    <header className="Header">
+      <div className="Header__About">
+        Hi I'm <span>Rafal Bialowski</span> A <span>Frontend Developer</span>
+      </div>
+      <div className="Header__AvatarContainer">
+        <img src={Avatar} className="Header__Avatar" alt="Avatar" />
+        <img src={CatAvatar} className="Header__CatAvatar" alt="CatAvatar" />
+      </div>
+    </header>
+  );
 }
 
 export default Header;

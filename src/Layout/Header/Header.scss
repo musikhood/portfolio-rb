@@ -1,0 +1,36 @@
+.Header {
+  width: 100%;
+  max-width: 115rem;
+  height: 45rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  &__About {
+    font-size: 4.6rem;
+    max-width: 67rem;
+    span {
+      font-family: var(--SecondaryFont);
+      color: var(--RedFont);
+      font-size: 6.4rem;
+    }
+  }
+  &__AvatarContainer {
+    position: relative;
+    width: 40rem;
+    height: 43rem;
+  }
+  &__Avatar {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+  }
+  &__CatAvatar {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: -11rem;
+  }
+}
