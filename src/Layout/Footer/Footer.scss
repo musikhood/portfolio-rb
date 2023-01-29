@@ -1,0 +1,38 @@
+.Footer {
+  padding: 20rem 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  position: relative;
+  &__ImgWrapper {
+    position: relative;
+    z-index: 100;
+    min-width: 8rem;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__Info {
+    color: var(--RedFont);
+    font-weight: bold;
+    @media screen and (max-width: 1350px) {
+      text-align: center;
+    }
+  }
+  &__CatWrapper {
+    position: absolute;
+    width: 30rem;
+    bottom: 6rem;
+    right: -13rem;
+    z-index: -1;
+    transform: rotate(20deg);
+    img {
+      width: 100%;
+    }
+  }
+}

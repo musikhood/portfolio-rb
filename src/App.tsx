@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { Header, Projects, About, Technologies } from "./Layout";
+import { Header, Projects, About, Technologies, Footer } from "./Layout";
 
 function App() {
   return (
@@ -8,12 +8,12 @@ function App() {
       <div className="App__Eclipse App__Eclipse--1"></div>
       <div className="App__Eclipse App__Eclipse--2"></div>
       <div className="App__Eclipse App__Eclipse--3"></div>
-      <div className="App__Eclipse App__Eclipse--4"></div>
 
       <Header />
       <Projects />
       <About />
       <Technologies />
+      <Footer />
     </div>
   );
 }

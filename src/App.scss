@@ -3,10 +3,10 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 10rem;
+  padding: 10rem 10rem 0 10rem;
   overflow-x: hidden;
   @media screen and (max-width: 500px) {
-    padding: 10rem 8rem;
+    padding: 10rem 8rem 0 8rem;
   }
   &__Eclipse {
     position: absolute;
@@ -30,10 +30,6 @@
     &--3 {
       top: 300rem;
       left: -30rem;
-    }
-    &--4 {
-      top: 460rem;
-      right: -35rem;
     }
   }
 }
