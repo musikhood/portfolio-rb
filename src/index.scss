@@ -19,6 +19,12 @@ html {
   --FontSize: 1.6rem;
 
   font-size: 62.5%;
+  @media screen and (max-width: 1350px) {
+    font-size: 50%;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 40%;
+  }
 }
 
 body {
@@ -26,6 +32,4 @@ body {
   font-size: var(--FontSize);
   color: var(--WhiteFont);
   background-color: var(--BlackBG);
-  padding: 10rem;
-  overflow-x: hidden;
 }

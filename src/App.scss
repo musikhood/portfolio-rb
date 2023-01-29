@@ -1,5 +1,35 @@
 .App {
+  width: 100%;
   display: flex;
   position: relative;
   flex-direction: column;
+  padding: 10rem;
+  overflow-x: hidden;
+  @media screen and (max-width: 500px) {
+    padding: 10rem 8rem;
+  }
+  &__Eclipse {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background-color: var(--RedFont);
+    filter: blur(30rem);
+    opacity: 0.8;
+    z-index: -100;
+    &--1 {
+      top: -30rem;
+      left: -30rem;
+    }
+
+    &--2 {
+      top: 140rem;
+      right: -35rem;
+    }
+
+    &--3 {
+      top: 300rem;
+      left: -30rem;
+    }
+  }
 }

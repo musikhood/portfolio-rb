@@ -11,7 +11,9 @@ function Header() {
       </div>
       <div className="Header__AvatarContainer">
         <img src={Avatar} className="Header__Avatar" alt="Avatar" />
-        <img src={CatAvatar} className="Header__CatAvatar" alt="CatAvatar" />
+        <div className="Header__CatAvatarWrapper">
+          <img src={CatAvatar} className="Header__CatAvatar" alt="CatAvatar" />
+        </div>
       </div>
     </header>
   );

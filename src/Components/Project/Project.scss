@@ -1,0 +1,128 @@
+.Project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  @media screen and (max-width: 1350px) {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  &--Reverse {
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 1350px) {
+      flex-direction: column;
+    }
+  }
+  &__Cat {
+    position: absolute;
+    z-index: -10;
+    width: 30rem;
+    &--1 {
+      top: -10rem;
+      left: -15rem;
+    }
+    &--2 {
+      bottom: -20rem;
+      left: 5rem;
+      @media screen and (max-width: 1350px) {
+        transform: rotate(-170deg);
+        left: auto;
+        bottom: auto;
+        right: -13rem;
+        top: -17rem;
+      }
+    }
+    &--3 {
+      top: -15rem;
+      left: 20rem;
+      @media screen and (max-width: 1350px) {
+        transform: rotate(-40deg);
+        top: -15rem;
+        left: auto;
+        right: 0rem;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__ImageContainer {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    @media screen and (max-width: 1350px) {
+      max-width: 55rem;
+    }
+  }
+  &__ImageWrapper {
+    overflow: hidden;
+    max-width: 55rem;
+    width: 100%;
+    max-height: 30rem;
+    border-radius: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+  &__AboutContainer {
+    max-width: 55rem;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    @media screen and (max-width: 1350px) {
+      max-width: 45rem;
+      p {
+        font-size: 2.2rem;
+      }
+    }
+    h2 {
+      font-family: var(--SecondaryFont);
+      color: var(--RedFont);
+      font-size: 4.8rem;
+      @media screen and (max-width: 1350px) {
+        font-size: 5.2rem;
+      }
+    }
+  }
+  &__Buttons {
+    display: flex;
+    align-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    @media screen and (max-width: 1350px) {
+      font-size: 2.2rem;
+    }
+  }
+  &__ButtonLive {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--WhiteFont);
+    background-color: var(--RedFont);
+    padding: 0.5rem 2.5rem;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgb(122, 1, 1);
+      color: rgb(154, 154, 154);
+    }
+  }
+  &__ButtonCode {
+    text-decoration: none;
+    color: var(--RedFont);
+    font-weight: bold;
+    padding: 0.5rem 2.5rem;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: rgb(122, 1, 1);
+    }
+  }
+}
