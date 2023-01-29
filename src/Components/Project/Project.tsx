@@ -36,10 +36,20 @@ function Project({
         <h2>{title}</h2>
         <p>{about}</p>
         <div className="Project__Buttons">
-          <a href={live} target="_blank" className="Project__ButtonLive">
+          <a
+            href={live}
+            target="_blank"
+            rel="noreferrer"
+            className="Project__ButtonLive"
+          >
             Live
           </a>
-          <a href={code} target="_blank" className="Project__ButtonCode">
+          <a
+            href={code}
+            target="_blank"
+            rel="noreferrer"
+            className="Project__ButtonCode"
+          >
             Code /&#62;
           </a>
         </div>

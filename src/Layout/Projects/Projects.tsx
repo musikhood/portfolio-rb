@@ -59,7 +59,7 @@ function Projects() {
       </div>
       <div className="Projects__Footer">
         <p>For more projects visit my github account</p>
-        <a href="https://github.com/musikhood">
+        <a href="https://github.com/musikhood" target="_blank" rel="noreferrer">
           <div className="Projects__FooterImgWrapper">
             <img src={github} alt="github icon" />
           </div>
